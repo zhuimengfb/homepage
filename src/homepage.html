@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zhuimengfb主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="../css/swiper/swiper.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/material/materialize.min.css" media="screen,projection">
+    <link rel="stylesheet" href="../css/timeline/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/material/materialize.min.js"></script>
+
+</head>
+<body>
+<div class="banner">
+    <nav>
+        <div class="nav-wrapper" style="background: #1abc9c">
+            <ul id="nav-mobile" class=" hide-on-med-and-down">
+                <li><a href="#about-me">ABOUT ME</a></li>
+                <li><a href="#my-skills">SKILLS</a></li>
+                <li><a href="#contact-me">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="col s6 m12 me">
+        <img class="img-me img-circle img-responsive" src="../img/me.jpg">
+        <div class="brief-introduction">
+            <span class="name">HELLO,&nbsp;MY NAME IS FU BO</span>
+            <span class="position">I AM A DEVELOPER!</span>
+        </div>
+    </div>
+</div>
+<div class="mycontainer container-fluid" style="padding: 0;">
+    <div class="row">
+        <div id="about-me" class="about-me">
+            <div class="text-center">
+                <span class="about-me-title">ABOUT ME</span>
+            </div>
+            <div class="text-center" style="margin:10px 0 10px 0;">
+                <img src="../img/about.png">
+            </div>
+            <section class="cd-container my-timeline">
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-picture">
+                        <img src="../img/cd-icon-picture.svg">
+                    </div>
+                    <div class="cd-timeline-content">
+                        <div class="text-center">
+                            <span class="timeline-tile">2011&nbsp;&nbsp;Shanghai JiaoTong University</span>
+                        </div>
+                        <span>I entered Shanghai JiaoTong University in 2011 and marjored in Information and Engineering.</span>
+                        <br>
+                        <span>In SJTU, I learned how to program and how to think about programming</span>
+                        <span class="cd-date">2011.09-2015.06</span>
+                    </div>
+                </div>
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-picture">
+                        <img src="../img/cd-icon-picture.svg">
+                    </div>
+                    <div class="cd-timeline-content">
+                        <div class="text-center">
+                            <span class="timeline-tile">2014&nbsp;&nbsp;Wondersgroup Company Internship</span>
+                        </div>
+                        <span>I got the internship opportunity after an interviewee.</span>
+                        <br>
+                        <span>In Wondersgroup, I learned more about Android Programming and Web Programming</span>
+                        <span class="cd-date">2014.06.10-2015.06</span>
+                    </div>
+                </div>
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-picture">
+                        <img src="../img/cd-icon-picture.svg">
+                    </div>
+                    <div class="cd-timeline-content">
+                        <div class="text-center">
+                            <span class="timeline-tile">2015&nbsp;&nbsp;Shanghai JiaoTong University</span>
+                        </div>
+                        <span>I got the recommendation to get further study in SJTU.</span>
+                        <br>
+                        <span>In school, I continued learning how to program with Android and Web</span>
+                        <span class="cd-date">2015.06.10-now</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="my-skills">
+            <div class="about-back"></div>
+            <div class="my-skills">
+                <div class="text-center">
+                    <span class="my-skills-title">MY SKILLS</span>
+                </div>
+                <div class="text-center" style="margin:10px 0 10px 0;">
+                    <img src="../img/ser.png">
+                </div>
+                <div class="skill-grids">
+                    <div class="col-md-3 skills-grid text-center">
+                        <div class="circle" id="circles-1"></div>
+                        <p>Web UI</p>
+                    </div>
+                    <div class="col-md-3 skills-grid text-center">
+                        <div class="circle" id="circles-2"></div>
+                        <p>MySQL</p>
+                    </div>
+                    <div class="col-md-3 skills-grid text-center">
+                        <div class="circle" id="circles-3"></div>
+                        <p>Java Web</p>
+                    </div>
+                    <div class="col-md-3 skills-grid text-center">
+                        <div class="circle" id="circles-4"></div>
+                        <p>Android</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <script type="text/javascript" src="../js/modeljs/circles.js"></script>
+                    <script>
+                        var colors = [
+                            ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff']
+                        ];
+                        for (var i = 1; i <= 4; i++) {
+                            var child = document.getElementById('circles-' + i),
+                                    percentage = 30 + (i * 10);
+
+                            Circles.create({
+                                id: child.id,
+                                percentage: percentage,
+                                radius: 80,
+                                width: 10,
+                                number: percentage / 1,
+                                text: '%',
+                                colors: colors[i - 1]
+                            });
+                        }
+
+                    </script>
+                </div>
+            </div>
+            <div class="my-skill-back"></div>
+        </div>
+        <div id="contact-me" class="contact-me">
+            <div class="text-center">
+                <span class="contact-me-title">CONTACT</span>
+            </div>
+            <div class="text-center" style="margin:10px 0 10px 0;">
+                <img src="../img/con1.png">
+            </div>
+            <div class="contact-grids">
+                <div class="col-md-5 contact-left">
+                    <h3>Say Hi to Me</h3>
+                    <div class="stripb"></div>
+                    <ul>
+                        <li>Dongchuan Road Num.800,Shanghai JiaoTong University</li>
+                        <li>My Blog: <a href="http://blog.csdn.net/zhuimengfb" target="_blank">blog/zhuimengfb</a></li>
+                        <li>My GitHub: <a href="https://github.com/zhuimengfb" target="_blank">github/zhuimengfb</a></li>
+                        <li>Mail:798478592@qq.com</li>
+                        <li><a href="www.zhuimengfb.com">Home Page</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 contact-right">
+                    <h3>Leave Me A Message</h3>
+                    <div class="stripb"></div>
+                    <form>
+                        <textarea type="text" onfocus="this.value = '';"
+                                  onblur="if (this.value == '') {this.value = 'Message';}"
+                                  required="">Message</textarea>
+                        <input type="submit" value="SEND">
+                    </form>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(".button-collapse").sideNav();
+</script>
+</body>
+</html>
