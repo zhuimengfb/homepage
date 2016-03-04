@@ -3,12 +3,14 @@ body{
 
 }
 .banner{
-    background-image:url("../img/glass.jpg");
+
 }
 .me{
-    padding-top: 80px;
+    background-image:url("../img/glass.jpg");
+    padding-top: 130px;
     display: block;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align:center
 }
 .img-me{
@@ -36,7 +38,7 @@ body{
 }
 .about-me{
     background: #3c3c3c;
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 30px;
 }
 .about-me-title{
@@ -52,7 +54,7 @@ body{
 }
 .my-skills{
     background: #1abc9c;
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 30px;
 }
 .my-skills-title{
@@ -82,7 +84,7 @@ body{
 
 .contact-me{
     background: #3c3c3c;
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 .contact-me-title{

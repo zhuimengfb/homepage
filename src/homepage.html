@@ -7,30 +7,63 @@
     <link rel="stylesheet" href="../css/swiper/swiper.min.css">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/homepage.css">
-    <link rel="stylesheet" href="../css/material/materialize.min.css" media="screen,projection">
     <link rel="stylesheet" href="../css/timeline/style.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/material/materialize.min.js"></script>
 
 </head>
 <body>
-<div class="banner">
-    <nav>
-        <div class="nav-wrapper" style="background: #1abc9c">
-            <ul id="nav-mobile" class=" hide-on-med-and-down">
-                <li><a href="#about-me">ABOUT ME</a></li>
-                <li><a href="#my-skills">SKILLS</a></li>
-                <li><a href="#contact-me">CONTACT</a></li>
+<!--<nav>
+    <div class="nav-wrapper" style="background: #1abc9c">
+        <ul id="nav-mobile" class=" hide-on-med-and-down">
+            <li><a href="#about-me">ABOUT ME</a></li>
+            <li><a href="#my-skills">SKILLS</a></li>
+            <li><a href="#contact-me">CONTACT</a></li>
+        </ul>
+    </div>
+</nav>-->
+<nav class="navbar navbar-default navbar-fixed-top site-navbar" style="background:#1abc9c">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                <span class="sr-only"></span> <span class="icon-bar"></span> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#home">
+                        <span style="color:#ffffff;">HOME</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about-me">
+                        <span style="color:#ffffff; ">ABOUT</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#my-skills">
+                        <span style="color:#fff;">SKILLS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact-me">
+                        <span style="color:#fff;">CONTACT</span>
+                    </a>
+                </li>
             </ul>
         </div>
-    </nav>
-    <div class="col s6 m12 me">
-        <img class="img-me img-circle img-responsive" src="../img/me.jpg">
-        <div class="brief-introduction">
-            <span class="name">HELLO,&nbsp;MY NAME IS FU BO</span>
-            <span class="position">I AM A DEVELOPER!</span>
-        </div>
+    </div>
+</nav>
+<div id="home" class="col s6 m12 me">
+    <img class="img-me img-circle img-responsive" src="../img/me.jpg">
+    <div class="brief-introduction">
+        <span class="name">HELLO,&nbsp;MY NAME IS FU BO</span>
+        <span class="position">I AM A DEVELOPER!</span>
     </div>
 </div>
 <div class="mycontainer container-fluid" style="padding: 0;">
@@ -87,8 +120,10 @@
                 </div>
             </section>
         </div>
+
+        <div class="about-back"></div>
         <div id="my-skills">
-            <div class="about-back"></div>
+
             <div class="my-skills">
                 <div class="text-center">
                     <span class="my-skills-title">MY SKILLS</span>
@@ -153,9 +188,10 @@
                     <ul>
                         <li>Dongchuan Road Num.800,Shanghai JiaoTong University</li>
                         <li>My Blog: <a href="http://blog.csdn.net/zhuimengfb" target="_blank">blog/zhuimengfb</a></li>
-                        <li>My GitHub: <a href="https://github.com/zhuimengfb" target="_blank">github/zhuimengfb</a></li>
+                        <li>My GitHub: <a href="https://github.com/zhuimengfb" target="_blank">github/zhuimengfb</a>
+                        </li>
                         <li>Mail:798478592@qq.com</li>
-                        <li><a href="www.zhuimengfb.com">Home Page</a></li>
+                        <li><a href="http://www.zhuimengfb.com">Home Page</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 contact-right">
